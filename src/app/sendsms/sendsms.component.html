@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h2>Library</h2>    
+            <ul>
+                <li *ngFor="let ans of alllibrary" (click)="filter_message(ans.id)">
+                    {{ans.title}}
+                </li>
+            </ul>
+            <h2>Messages</h2>
+            <ul>
+                <li *ngFor="let ans of allmessage" (click)="get_message_details(ans.title)">{{ans.title}}</li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+                <form >
+                        
+                        <div class="form-group">
+                          <label for="exampleInputEmail1" >Contact Name</label>
+                          <input type="text" class="form-control" id="nameid" aria-describedby="emailHelp" #name>
+                         
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" >Contact Mobile</label>
+                            <input type="text"  class="form-control" id="mobileid" aria-describedby="emailHelp" #mobile>
+                           
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" >Contact Email</label>
+                            <input type="text"  class="form-control" id="emailid" aria-describedby="emailHelp" #email>
+                           
+                            
+                          </div>
+                        
+                          <div class="form-group">
+                                <label for="exampleInputEmail1" >Message</label>
+                                <input type="text" class="form-control" id="messageid" aria-describedby="emailHelp" #usermessage>
+                               
+                                
+                              </div>
+                        <button type="button" (click)="sendsms()"  class="btn btn-primary">Submit</button>
+                        {{message}}
+                      </form>    
+        </div>
+        <div class="col-lg-4">
+            <h2>Groups</h2>
+            <ul>
+                <li *ngFor="let ans of allgroup" (click)="filter_contact(ans.id)">
+                    {{ans.title}}
+                </li>
+            </ul>
+            <h2>Contacts</h2>
+            <ul>
+                <li *ngFor="let ans of allcontact" (click)="get_contact_details(ans.email,ans.contact,ans.title)" >
+                    {{ans.title}}
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

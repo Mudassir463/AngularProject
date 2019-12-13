@@ -1,0 +1,16 @@
+
+<form [formGroup]="loginForm" (ngSubmit)="Postdata(loginForm)">
+        <div class="form-group">
+          <label for="exampleInputEmail1" >Group Name</label>
+          <input type="text" formControlName="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+         
+          <div *ngIf="loginForm.controls['title'].touched && !loginForm.controls['title'].valid" >
+              <span *ngIf="loginForm.controls['title'].hasError('required')">Name is Required</span>
+              <span *ngIf="loginForm.controls['title'].hasError('pattern')">Name Invalid</span>
+          </div>
+        </div>
+        
+        
+        <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary">Submit</button>
+        {{message}}
+      </form>

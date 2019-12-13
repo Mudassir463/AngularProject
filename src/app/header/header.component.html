@@ -1,0 +1,43 @@
+<nav class="container navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" *ngIf="for_login">
+          <a class="nav-link" routerLink="/register">Register</a>
+        </li>
+        <li class="nav-item" *ngIf="for_login">
+            <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="for_password">
+            <a class="nav-link" routerLink="/lib">Lib</a>
+        </li>
+        <li class="nav-item" *ngIf="for_password">
+            <a class="nav-link" routerLink="/group">Group</a>
+        </li>
+        <li class="nav-item" *ngIf="for_password">
+            <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item" *ngIf="for_password">
+            <a class="nav-link" routerLink="/message">Message</a>
+        </li>
+        <li class="nav-item" *ngIf="for_password">
+            <a class="nav-link" routerLink="/sendsms">Send sms</a>
+        </li>
+        <li class="nav-item" *ngIf="for_password">
+            <a class="nav-link" routerLink="/password">Password</a>
+        </li>
+        <li class="nav-item" *ngIf="for_password">
+            <a class="nav-link" routerLink="/logout">Logout</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </nav>

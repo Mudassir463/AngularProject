@@ -1,0 +1,34 @@
+
+<form >
+    <div class="form-group">
+        <label for="exampleInputEmail1" >Select Group</label>
+        
+        <select name="" class="form-control" #groupid >
+            <option value="{{ans.id}}" *ngFor="let ans of allgroup">
+                {{ans.title}}
+            </option>
+        </select>
+        
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1" >Contact Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" #name>
+     
+      
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1" >Contact Mobile</label>
+        <input type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" #mobile>
+       
+        
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" >Contact Email</label>
+        <input type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" #email>
+       
+        
+      </div>
+    
+    <button type="button" (click)="add_contact(groupid,name,mobile,email)"  class="btn btn-primary">Submit</button>
+    {{message}}
+  </form>

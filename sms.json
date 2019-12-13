@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "akshay",
+      "email": "akshay@gmail.com",
+      "password": 1234,
+      "mobile": 9820098200,
+      "status": 0
+    },
+    {
+      "name": "mehul",
+      "mobile": "9820198201",
+      "email": "mehul@gmail.com",
+      "password": "aaaa",
+      "status": 0,
+      "id": 2
+    }
+  ],
+  "library": [
+    {
+      "id": 1,
+      "title": "New Year",
+      "byid": 1
+    },
+    {
+      "id": 2,
+      "title": "Xmas",
+      "byid": 1
+    },
+    {
+      "title": "Xmas",
+      "byid": "2",
+      "id": 3
+    },
+    {
+      "title": "Lib1",
+      "byid": "1",
+      "id": 4
+    },
+    {
+      "title": "Lib2",
+      "byid": "1",
+      "id": 5
+    }
+  ],
+  "group": [
+    {
+      "id": 1,
+      "title": "friends",
+      "byid": 1
+    },
+    {
+      "id": 2,
+      "title": "Family",
+      "byid": 1
+    },
+    {
+      "title": "mudass",
+      "byid": "2",
+      "id": 3
+    },
+    {
+      "title": "askshy",
+      "byid": "2",
+      "id": 4
+    }
+  ],
+  "message": [
+    {
+      "id": 1,
+      "title": "Happy New Year",
+      "libid": 1
+    },
+    {
+      "id": 2,
+      "title": "Wish You Happy New Year",
+      "libid": 1
+    },
+    {
+      "id": 3,
+      "title": "Merry Xmas",
+      "libid": 2
+    },
+    {
+      "title": "Lib1 Message",
+      "libid": "4",
+      "id": 4
+    },
+    {
+      "title": "Lib2 Message",
+      "libid": "5",
+      "id": 5
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "title": "Dharmesh",
+      "grpid": 1,
+      "contact": 9820098200,
+      "email": "dh@gmail.com"
+    },
+    {
+      "id": 2,
+      "title": "Gaurav",
+      "grpid": 1,
+      "contact": 9810098200,
+      "email": "gu@gmail.com"
+    },
+    {
+      "id": 3,
+      "title": "Ketan",
+      "grpid": 2,
+      "contact": 9890098200,
+      "email": "Ketan@gmail.com"
+    },
+    {
+      "title": "Ketan",
+      "contact": "9821982110",
+      "email": "ketan@gmail.com",
+      "grpid": "1",
+      "id": 4
+    },
+    {
+      "title": "Gaurav",
+      "contact": "8908908900",
+      "email": "gaurav@gmail.com",
+      "grpid": "2",
+      "id": 5
+    }
+  ]
+}
